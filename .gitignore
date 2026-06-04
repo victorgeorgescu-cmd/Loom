@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+coverage/
+
+# local throwaway postgres cluster used for migration validation
+.pgdata/
+
+# prisma generated client
+apps/api/src/prisma/generated/

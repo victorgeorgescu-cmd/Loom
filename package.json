@@ -1,0 +1,30 @@
+{
+  "name": "loom",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Loom — multi-brand email production app (replaces the email-orchestrator CLI flow)",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "dev": "pnpm --parallel --filter ./apps/* dev",
+    "db:migrate": "pnpm --filter @loom/api prisma:migrate",
+    "db:generate": "pnpm --filter @loom/api prisma:generate"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "prisma",
+      "@prisma/client",
+      "@prisma/engines"
+    ]
+  }
+}

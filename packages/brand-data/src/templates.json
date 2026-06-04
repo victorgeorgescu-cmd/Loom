@@ -1,0 +1,16 @@
+{
+  "sales-single-hero": {
+    "campaignType": "sales",
+    "file": "sales-single-hero.html",
+    "slots": [
+      { "key": "preheader", "label": "Preheader text", "kind": "text", "required": true },
+      { "key": "brand_name", "label": "Brand name (header)", "kind": "text", "required": true },
+      { "key": "hero_image", "label": "Hero image", "kind": "img", "required": true },
+      { "key": "headline", "label": "Headline", "kind": "text", "required": true },
+      { "key": "body", "label": "Body copy", "kind": "richtext", "required": true },
+      { "key": "testimonial", "label": "Testimonial", "kind": "richtext", "required": false },
+      { "key": "cta", "label": "Call to action", "kind": "cta", "required": true },
+      { "key": "footer_address", "label": "Footer address (CAN-SPAM)", "kind": "text", "required": true }
+    ]
+  }
+}

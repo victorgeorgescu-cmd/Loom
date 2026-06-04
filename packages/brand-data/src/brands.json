@@ -1,0 +1,16 @@
+{
+  "fha": {
+    "name": "The Forgotten Home Apothecary",
+    "featuredPerson": null,
+    "footerAddress": null,
+    "tidConvention": null,
+    "complianceBannedTerms": ["cure", "cures", "cured", "treat", "treats", "heal", "heals", "healed", "fda approved"]
+  },
+  "hgw": {
+    "name": "The Holistic Guide to Wellness",
+    "featuredPerson": "Dr. Nicole Apelian",
+    "footerAddress": null,
+    "tidConvention": null,
+    "complianceBannedTerms": ["cure", "cures", "cured", "treat", "treats", "heal", "heals", "healed", "fda approved", "miracle", "guaranteed"]
+  }
+}
