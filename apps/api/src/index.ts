@@ -5,6 +5,7 @@ import { seed } from "./seed.js";
 import { generateRoutes } from "./routes/generate.js";
 import { imageRoutes } from "./routes/images.js";
 import { projectRoutes } from "./routes/projects.js";
+import { placeholderRoutes } from "./routes/placeholder.js";
 
 async function main() {
   const app = Fastify({ logger: true });
@@ -16,6 +17,7 @@ async function main() {
   await app.register(generateRoutes);
   await app.register(imageRoutes);
   await app.register(projectRoutes);
+  await app.register(placeholderRoutes);
 
   try {
     await seed();

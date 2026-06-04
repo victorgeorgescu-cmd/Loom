@@ -51,6 +51,10 @@ export const GenerateRequest = z.object({
   templateId: z.string(),
   brand: z.string(), // brand slug, e.g. "fha"
   brief: z.string().min(1),
+  // Skip the live AI/image calls and fill the template with canned compliant
+  // copy + a placeholder hero. Auto-enabled server-side when no API keys are
+  // configured, so the app is fully usable without secrets.
+  mock: z.boolean().optional(),
 });
 export type GenerateRequest = z.infer<typeof GenerateRequest>;
 
